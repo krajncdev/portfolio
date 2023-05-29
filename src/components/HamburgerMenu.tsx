@@ -31,6 +31,7 @@ const HamburgerMenu = ({ isMenuOpen, setIsMenuOpen }: IHamburgerMenuProps) => {
           <li key={item.id}>
             <a
               href={item.path}
+              onClick={handleButtonClick}
               target={item.id === 2 ? '_blank' : '_self'}
               className='text-white text-lg font-medium'
             >
